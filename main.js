@@ -3,6 +3,7 @@ var app = new Vue({
     data:{
         product:'Shocks',
         image:'assets/img1.jpeg',
-        inStock:false
+        inStock:false,
+        details:['80% Cotton', '20% Polyster' , 'Mens Wear']
     }
 })

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,26 @@
     <title>First Vue APP</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="nav-bar">
 
     </div>
     <div id="app">
         <div class="product">
-             <h1>{{product}}</h1>
+            <div class="product-img">
+                <img height="350px" v-bind:src='image' alt="img__shocks" srcset="">
+            </div>
+            <div class="product-info">
+                <h1>{{product}}</h1>
+                <span v-if="inStock">In Stock</span>
+                <span v-else="inStock">Out of Stockadd</span>
+            </div>
         </div>
-       
-       
-    </div>
 
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
